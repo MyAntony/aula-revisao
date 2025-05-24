@@ -24,7 +24,7 @@ function FormularioCadastro()
     {
         try
         {
-            const response = await axios.post('https://primeiro-site-rlhz.onrender.com/jogadores', {nome, sexo, idade, altura, peso, posicao, numeroCamisa})
+            const response = await axios.post('https://aula-revisao-backend.onrender.com/jogadores', {nome, sexo, idade, altura, peso, posicao, numeroCamisa})
             exibirMensagem(response.data.mensagem || 'Jogador cadastrado com sucesso!', 'sucesso')
             setNome('')
             setSexo('')

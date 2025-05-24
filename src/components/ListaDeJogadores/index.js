@@ -14,7 +14,7 @@ function ListaDeJogadores()
             {
             try
             {
-                const response = await axios.get('https://primeiro-site-rlhz.onrender.com/jogadores')
+                const response = await axios.get('https://aula-revisao-backend.onrender.com/jogadores')
                 setJogadores(response.data)
             } catch (error)
             {
